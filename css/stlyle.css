@@ -67,13 +67,14 @@
     display: flex;
     width: 80%;
     margin: 1rem auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     gap: 2rem;
   }
   /*------ start of wide */
   .wide_wrapper {
     min-width: 400px;
-    /* border: 1px solid green; */
+    border-right: 1px solid lightgrey;
+    padding-right: 2rem;
     flex-grow: 1;
 
     .photo {
@@ -123,6 +124,9 @@
   /*------ start of narrow */
   .narrow_wrapper {
     min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
     /* border: 1px solid blue; */
 
     .sign_in_wrapper {
@@ -135,18 +139,25 @@
         padding: 1rem;
       }
 
-      .username_box {
+      .username_box,
+      .token_box {
         display: flex;
         border: 0.5px solid lightgrey;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         overflow: hidden;
       }
-      .username_box span {
+      .username_box span,
+      .token_box span {
         background: #eeeeee;
         padding: 0.5rem;
+        min-width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-      .username_box input {
+      .username_box input,
+      .token_box input {
         border: none;
         outline: none;
         padding: 0.5rem 0.8rem;
@@ -172,6 +183,73 @@
         outline: none;
         padding: 0.5rem 0.8rem;
         flex-grow: 1;
+      }
+
+      .action_row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .action_row a {
+        text-decoration: none;
+        color: #444;
+      }
+      .action_row a:hover {
+        text-decoration: underline;
+      }
+      .action_row button {
+        cursor: pointer;
+        padding: 8px 24px;
+        color: white;
+        background: #444;
+      }
+    }
+
+    .user_guide_videos_wrapper {
+      .wrapper_title {
+        color: white;
+        background: #444;
+        padding: 1rem;
+      }
+      .wrapper_body {
+        display: grid;
+        row-gap: 1rem;
+        background: #f9f9f9;
+        padding: 1rem;
+        border-bottom: 1px ridge lightgrey;
+      }
+      .wrapper_body img {
+        width: 100%;
+      }
+      .wrapper_body a {
+        text-decoration: none;
+        color: #444;
+      }
+      .wrapper_body a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .related_links_wrapper {
+      .wrapper_title {
+        color: white;
+        background: #444;
+        padding: 1rem;
+      }
+      .wrapper_body {
+        display: grid;
+        row-gap: 1rem;
+        background: #f9f9f9;
+        padding: 1rem;
+        border-bottom: 1px ridge lightgrey;
+      }
+      .wrapper_body a {
+        text-decoration: none;
+        color: #444;
+      }
+      .wrapper_body a:hover {
+        text-decoration: underline;
       }
     }
   }
