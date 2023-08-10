@@ -71,7 +71,7 @@
   .main_wrapper {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     margin: 1rem auto;
     /* border: 1px solid red; */
     gap: 2rem;
@@ -80,8 +80,8 @@
   .wide_wrapper {
 /*     min-width: 400px; */
 /*     border-right: 1px solid lightgrey; */
-    padding-right: 2rem;
-    flex-grow: 1;
+/*     padding-right: 2rem; */
+/*     flex-grow: 1; */
 
     .photo {
       width: 100%;
