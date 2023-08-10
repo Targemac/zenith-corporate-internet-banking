@@ -78,8 +78,8 @@
   }
   /*------ start of wide */
   .wide_wrapper {
-    min-width: 400px;
-    border-right: 1px solid lightgrey;
+/*     min-width: 400px; */
+/*     border-right: 1px solid lightgrey; */
     padding-right: 2rem;
     flex-grow: 1;
 
